@@ -1,0 +1,78 @@
+{
+	"cards": [{
+			"id": 1,
+			"name": "Inteligência",
+            "description": "",
+            "effects": [1, 2],
+			"img": "card1.png"
+		}
+	],
+	"races": [{
+			"id": 1,
+			"name": "Humano",
+			"effects": []
+		},
+		{
+			"id": 2,
+			"name": "Anão",
+			"effects": []
+		},
+		{
+			"id": 3,
+			"name": "Halfling",
+			"effects": []
+		},
+		{
+			"id": 4,
+			"name": "Elfo",
+			"effects": []
+		}
+	],
+	"classes": [{
+			"id": 1,
+			"name": "Clérigo",
+			"effects": [1, 2, 3]
+		},
+		{
+			"id": 2,
+			"name": "Ladrão",
+			"effects": [3, 2]
+		},
+		{
+			"id": 3,
+			"name": "Mago",
+			"effects": [1, 5, 8]
+		},
+		{
+			"id": 4,
+			"name": "Guerreiro",
+			"effects": [9, 10, 15]
+		}
+	],
+	"effects": [
+        {
+            "id": 1,
+            "type": "buff",
+            "description": "Aumenta o tesouro em +1",
+            "attribute": "treasure",
+            "value":1,
+            "targets":["monster"],
+            "conditions":[1]
+        },
+        {
+            "id": 2,
+            "type": "buff",
+            "description": "Aumenta a força em +5",
+            "attribute": "strength",
+            "value":5,
+            "targets":["monster"],
+            "conditions":[]
+        }
+	],
+	"conditions": [
+        {"id":1, "target":"monster", "attribute":"life", "value":"0"}
+	],
+	"monsters": [
+
+	]
+}
